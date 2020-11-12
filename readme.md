@@ -61,25 +61,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Breakdownschets (week 1)
-
--uitwerken voor de 1e werkgroep - eind van de eerste week-
-
+<img src="images/breakdown1.jpg" width="375px" alt="breakdown1">
+<img src="images/breakdown2.jpg" width="375px" alt="breakdown2">
+<img src="images/breakdown3.jpg" width="375px" alt="breakdown3">
+<img src="images/breakdown4.jpg" width="375px" alt="breakdown4">
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
 **Je startniveau:** Rood
 
 **Je focus:** Responsive
 
-**Je opdracht:** https://www.spotify.com/nl/
-Als er ingelogd is
+**Je opdracht:** https://www.patagonia.com/home/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/homepage.png" width="375px" alt="homepage met afspeellijsten">
+<img src="images/homepage.png" width="375px" alt="Homepage van Patagonia">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/premium.png" width="375px" alt="uitleg pagina voor spotify premium">
+<img src="images/activism.png" width="375px" alt="Pagina over het activisme van Patagonia.">
