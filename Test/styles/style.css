@@ -1,0 +1,16 @@
+body {
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navitem {
+    height: 100px;
+    width: auto;
+}
