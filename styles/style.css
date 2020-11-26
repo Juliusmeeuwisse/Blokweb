@@ -13,6 +13,17 @@ body {
   overflow-x: hidden;
 }
 
+.blackbar {
+  position: absolute;
+  top: 0px;
+  color: black;
+  border: black;
+  height: 48px;
+  width: 100%;
+  z-index: 5;
+  background-color: black;
+}
+
 .shiptext {
   font-family: 'Lato', sans-serif;
   font-size: 0.91em;
@@ -42,19 +53,16 @@ body {
   width: auto;
   height: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 60%;
+  transform: translate(-55%, -55%);
   opacity: 66%;
 }
 
-#title {
-  position: absolute;
-  top: 2000px;
-}
-
 .navbar {
-  margin-top: 16px;
+  position: absolute;
+  top: 8%;
+  margin-top: 0;
   padding: 22px;
   display: flex;
   justify-content: space-between;
@@ -76,24 +84,22 @@ body {
   margin-left: 30px;
 }
 
-hr {
+.bigbuttondefault {
+  font-family: 'Lato', sans-serif;
+  font-weight: 1000;
+  border: none;
   color: black;
-  border: black;
-  height: 48px;
-  z-index: 1;
-  background: black;
+  background-color: white;
+  padding: 19px 10%;
+  font-size: 16px;
+  border-radius: 35px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 7%;
+  margin-bottom: 12%;
 }
 
-.resonance {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  margin-top: 0%;
-}
-
-.resonancehead {
+.headtextdefault {
   font-family: 'Lusitana', serif;
   font-size: 2em;
   z-index: 2;
@@ -103,43 +109,98 @@ hr {
   width: 70%;
 }
 
-.resonancetext {
+.smalltextdefault {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   color: white;
   z-index: 2;
-  line-height: 30px;
+  line-height: 26px;
   margin-left: 11%;
   width: 70%;
+  margin-top: 3%;
 }
-
-.resonancebutton {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  border: none;
-  color: black;
-  padding: 18px 10%;
-  font-size: 16px;
-  border-radius: 35px;
-  width: 90%;
-  margin-left: 5%;
-  max-width: 390px;
-  margin-top: 5%;
+/* RESONANCE STUKJE*/
+.resonance {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
 }
-.slider1item {
-  overflow: hidden;
-  width: 90%;
-  border-radius: 30px;
+/*1ste SLIDER */
+.slidersectie {
+    height: 53vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
-.test1 {
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow: scroll;
+  overflow-y: hidden;
+  margin-top: 11vh;
+}
+.slideritem {
+  position:relative;
+  width:calc(100vw - 2rem);
+  max-width:100%;
+  flex-shrink:0;
+  scroll-snap-align: center;
+  margin-left: 0;
+}
+.slideritem1 {
+  margin-left: 25vw;
+}
+.sliderhead {
+  font-family: "lato", serif;
+  font-size: 1.4em;
+  font-weight: 1000;
+  position:absolute;
+  left:0; 
+  top:0;
+  margin:0; 
+  padding:.5em;
+  font-size:1em;
+  color:white;
+}
+.sliderimg {
+  display:block;
+  width:78%;
+  height:auto;
+  border-radius: 8px;
+  max-width: 350px;
+  margin-right: 50px;
+  scroll-snap-align: center;
+}
+.sliderbutton {
   position: absolute;
-  top: 160%;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 40%;
+  margin-left: 30%;
+  max-width: 40%;
+}
+.slider2 {
+  height: 79vh;
+}
+/* MOUNTAIN STUKJE*/
+
+.mountainimgcontainer {
+  position: absolute;
+  top: 155%;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: -1000;
+  background-color: black;
 }
+
 .mountainimg {
   min-width: 100%;
   min-height: 100%;
@@ -149,4 +210,153 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 66%;
+  z-index: 100;
+}
+
+.mountain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.mountainhead {
+  font-family: 'Lato', serif;
+  font-size: 28px;
+  font-weight: 1000;
+  margin-top: 70vh;
+}
+
+/* HAUNTED STUKJE*/
+
+.hauntedimgcontainer {
+  position: absolute;
+  top: 330%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1000;
+  background-color: black;
+}
+
+.hauntedimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 66%;
+  z-index: 100;
+}
+
+.haunted {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  height: 97vh;
+}
+
+.hauntedhead {
+  font-family: 'Lusitana', serif;
+  font-size: 30px;
+}
+
+.hauntedbutton {
+  margin-bottom: 25vh;
+}
+/* FOOTER*/
+
+footer {
+  background-color: black;
+  height: 150vh;
+  padding-left: 5%;
+  padding-top: 10vh;
+}
+footer :nth-child(1) {
+  font-family: 'lato', serif;
+  color: white;
+  z-index: 5;
+  font-size: 1.25em;
+  font-weight: 1000;
+}
+footer :nth-child(2) {
+  font-family: 'lato', serif;
+  color: white;
+  z-index: 5;
+  font-size: 1.02em;
+  line-height: 1.75;
+  margin-top: 5vh;
+}
+footer :nth-of-type(3) {
+  width: 100%;
+}
+.mailform {
+  width: 94%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 1em;
+  margin-top: 5vh;
+}
+::placeholder {
+  opacity: 0.8;
+  color: white;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+/* COMPUTER */
+@media only screen and (min-width: 768px) {
+  .navlogo {
+    width: 12rem;
+    margin-left: 45px;
+  }
+
+  .videocontainer video {
+    left: 55%;
+    top: 55%;
+  }
+
+  .resonance {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .resonancebutton {
+    align-self: center;
+    margin-left: 0;
+    padding: 18px;
+    white-space: nowrap;
+    margin-top: 1%;
+    width: 220px;
+  }
+
+  .resonancehead {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 250px;
+  }
+
+  .resonancetext {
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 1.2rem;
+  }
 }

@@ -36,13 +36,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 1 (week 3)
 
-### Stand van zaken
-
--dit ging goed & dit was lastig-
+Het was deze week erg druk maar ben toch blij met de voortgang die ik heb gemaakt,
+vooral de sliders had ik problemen mee en eerst de flexbox maar heb dit ondertussen allemaal gefixed.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/mainmobile.png" width="375px" alt="mainmobile">
+<img src="images/mainpc.png" width="1920px" alt="mainpc">
+<img src="images/mobile2.png" width="375px" alt="mainmobile">
+<img src="images/mobile3.png" width="375px" alt="mainmobile">
+<img src="images/mobile4.png" width="375px" alt="mainmobile">
+<img src="images/activismmainmobile.png" width="375px" alt="mainmobile">
+<img src="images/activismmainpc.png" width="1920px" alt="mainpc">
 
 ### Agenda voor meeting
 
