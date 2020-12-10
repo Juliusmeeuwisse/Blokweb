@@ -97,6 +97,8 @@ body {
   margin-left: 5%;
   margin-top: 7%;
   margin-bottom: 12%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .headtextdefault {
@@ -119,6 +121,7 @@ body {
   width: 70%;
   margin-top: 3%;
 }
+
 /* RESONANCE STUKJE*/
 .resonance {
   display: flex;
@@ -127,14 +130,17 @@ body {
   justify-content: flex-end;
   width: 100%;
   height: 100vh;
+  overflow: auto;
 }
-/*1ste SLIDER */
+
+/*Slider Default */
 .slidersectie {
-    height: 53vh;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  height: 53vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
+
 .slider {
   display: flex;
   flex-direction: row;
@@ -142,52 +148,60 @@ body {
   scroll-snap-type: x mandatory;
   overflow: scroll;
   overflow-y: hidden;
-  margin-top: 11vh;
+  align-items: center;
 }
+
 .slideritem {
-  position:relative;
-  width:calc(100vw - 2rem);
-  max-width:100%;
-  flex-shrink:0;
+  position: relative;
+  max-width: 80%;
+  flex-shrink: 0;
   scroll-snap-align: center;
   margin-left: 0;
+  display: flex;
+  justify-content: center;
 }
+
 .slideritem1 {
-  margin-left: 25vw;
+  margin-left: 20%;
 }
+
 .sliderhead {
   font-family: "lato", serif;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 1000;
-  position:absolute;
-  left:0; 
-  top:0;
-  margin:0; 
-  padding:.5em;
-  font-size:1em;
-  color:white;
+  position: absolute;
+  color: white;
+  margin-top: 8vh;
+  top: calc(15% - 1em);
+  margin-right: 15%;
 }
+
 .sliderimg {
-  display:block;
-  width:78%;
-  height:auto;
+  display: block;
+  width: 85%;
+  height: auto;
   border-radius: 8px;
-  max-width: 350px;
+  max-width: 25em;
   margin-right: 50px;
   scroll-snap-align: center;
 }
+
 .sliderbutton {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  width: 40%;
-  margin-left: 30%;
-  max-width: 40%;
+  width: 40vw;
+  max-width: 200px;
+  margin-top: 15vh;
+  top: calc(15% - 1em);
+  margin-left: 16%;
 }
-.slider2 {
-  height: 79vh;
+
+.slideritemnext {
+  margin-left: 0.5%;
 }
+
 /* MOUNTAIN STUKJE*/
 
 .mountainimgcontainer {
@@ -231,12 +245,37 @@ body {
   font-weight: 1000;
   margin-top: 70vh;
 }
+/*Stories Slider */
+ .storieshead {
+  font-family: "lato", serif;
+  font-size: 1.3em;
+  z-index: 2;
+  color: black;
+  font-weight: 1000;
+  width: 100%;
+  text-align: center;
+  margin-top: 4em;
+
+}
+.storieslink {
+  font-family: "lato", serif;
+  font-size: 0.9em;
+  z-index: 2;
+  color: black;
+  font-weight: 1000;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.8em;
+  text-decoration: underline;
+
+}
+
 
 /* HAUNTED STUKJE*/
 
 .hauntedimgcontainer {
   position: absolute;
-  top: 330%;
+  top: 340%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -266,7 +305,7 @@ body {
   display: flex;
   text-align: left;
   justify-content: flex-end;
-  height: 97vh;
+  height: 100vh;
 }
 
 .hauntedhead {
@@ -277,6 +316,11 @@ body {
 .hauntedbutton {
   margin-bottom: 25vh;
 }
+.sportensectie {
+  margin-top: 20vh;
+  margin-bottom: 4vh;
+}
+
 /* FOOTER*/
 
 footer {
@@ -285,6 +329,7 @@ footer {
   padding-left: 5%;
   padding-top: 10vh;
 }
+
 footer :nth-child(1) {
   font-family: 'lato', serif;
   color: white;
@@ -292,6 +337,7 @@ footer :nth-child(1) {
   font-size: 1.25em;
   font-weight: 1000;
 }
+
 footer :nth-child(2) {
   font-family: 'lato', serif;
   color: white;
@@ -300,9 +346,11 @@ footer :nth-child(2) {
   line-height: 1.75;
   margin-top: 5vh;
 }
+
 footer :nth-of-type(3) {
   width: 100%;
 }
+
 .mailform {
   width: 94%;
   background: none;
@@ -312,11 +360,70 @@ footer :nth-of-type(3) {
   font-size: 1em;
   margin-top: 5vh;
 }
+
 ::placeholder {
   opacity: 0.8;
   color: white;
   font-size: 0.8em;
   font-weight: normal;
+}
+/*Activism*/
+.bigtextactivism {
+  font-family: 'lato', serif;
+  color: black;
+  z-index: 5;
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18vh;
+
+}
+.smalltextactivism {
+  font-family: 'lato', serif;
+  color: black;
+  z-index: 5;
+  font-size: 1em;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 4vh;
+  width: 80%;
+  font-weight: normal;
+
+}
+.activismhead {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* Green Future section */
+.greenfutureimgcontainer {
+  position: absolute;
+  top: 190%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1000;
+  background-color: black;
+}
+
+.greenimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 66%;
+  z-index: 100;
+}
+.activismslider1 {
+  margin-top: 24vh;
+
 }
 /* COMPUTER */
 @media only screen and (min-width: 768px) {
@@ -353,10 +460,29 @@ footer :nth-of-type(3) {
     margin-top: 250px;
   }
 
+  .slideritem1 {
+    margin-left: 4%;
+  }
+
   .resonancetext {
     text-align: center;
     margin-left: 25%;
     width: 50%;
     font-size: 1.2rem;
+  }
+
+  .mountainhead {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    font-size: 3.6rem;
+  }
+  .mountainbutton {
+    align-self: center;
+    margin-left: 0;
+    padding: 18px;
+    white-space: nowrap;
+    margin-top: 1%;
+    width: 220px;
   }
 }

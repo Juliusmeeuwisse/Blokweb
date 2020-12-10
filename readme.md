@@ -30,9 +30,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Ik heb de sliders helemaal anders gemaakt zodat ze nu echt goed werken en heb veel content toegevoegd.
 
 
+**Screenshot(s):**
+<img src="images/nieuweslidermobile.png" width="375px" alt="mainmobile">
+<img src="images/stories.png" width="375px" alt="mainmobile">
+<img src="images/hauntedw5.png" width="375px" alt="mainmobile">
+<img src="images/sports.png" width="375px" alt="mainmobile">
+<img src="images/movement.png" width="375px" alt="mainmobile">
+<img src="images/w5redlake.png" width="375px" alt="mainmobile">
+<img src="images/mountainpc.png" width="375px" alt="mainmobile">
 
 ## Voortgang 1 (week 3)
 
