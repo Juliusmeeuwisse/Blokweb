@@ -27,12 +27,55 @@
 				<source src="videos/header.mp4" type="video/mp4">
 			</video>
 		</div>
+		<!-- Navbar -->
 		<nav class="navbar">
 			<a class="shoppingbag"><img class="navitem" src="images/shopping.svg"></a>
 			<a class="navlistlogo"><img class="navitem navlogo" src="images/patlogo.png"></a>
 			<div class="glasslogo"><a><img class="navitem" src="images/glass.svg"></a>
-				<a><img class="navitem" src="images/burger.svg"></a></div>
+				<a href="#" onclick="openNav()"><img class="navitem" src="images/burger.svg"></a></div>
 		</nav>
+		<!-- Hamburger menu Overlay!-->
+		<div id="hamburgermenu" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<section class="overlaysection">
+					<p>Company</p>
+					<a href="activism.html">Business Unusual</a>
+					<a href="activism.html">Our Footprint</a>
+					<a href="activism.html">Patagonia Films</a>
+					<a href="activism.html">1% for the Planet</a>
+					<a href="activism.html">How We Fund</a>
+					<a href="activism.html">Careers</a>
+					<a href="activism.html">Press</a>
+				</section>
+				<section class="overlaysection">
+					<p>Customerservice</p>
+					<a href="activism.html">Help Center</a>
+					<a href="activism.html">Order Status</a>
+					<a href="activism.html">Returns & Exchanges</a>
+					<a href="activism.html">Product Care & Repair</a>
+					<a href="activism.html">Ironclad Guarantee</a>
+					<a href="activism.html">Pro Program</a>
+					<a href="activism.html">Find a Store</a>
+					<a href="activism.html">Group Sales</a>
+				</section>
+				<section class="overlaysection">
+					<article class="overlayimgsection">
+						<h1 class="overlayimghead">Patagonia Action Works</h1>
+						<img src="./images/overlayimg1.jpg" class="overlayimg" href="activism.html">
+					</article>
+					<article class="overlayimgsection">
+						<h1 class="overlayimghead">Worn Wear</h1>
+						<img src="./images/overlayimg2.jpg" class="overlayimg" href="activism.html">
+					</article>
+					<article class="overlayimgsection">
+						<h1 class="overlayimghead">Patagonia Provisions</h1>
+						<img src="./images/overlayimg3.jpg" class="overlayimg" href="activism.html">
+					</article>
+				</section>
+			</div>
+		</div>
+		<!-- Resonance Section-->
 		<section class="resonance">
 			<h1 class="resonancehead headtextdefault">The Resonance of Stone</h1>
 			<p class="resonancetext smalltextdefault">Listen to Terry Tempest Williams read her new story on the pulse
@@ -42,34 +85,45 @@
 		</section>
 	</header>
 	<main>
-		<section class="slidersectie">
-			<div class="slider">
-				<article class="slideritem1 slideritem">
-					<h2 class="sliderhead">Used Gear</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/jas.png" alt="picture of woman holding a rainbow colored jacket">
-				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Holiday Guide</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/holidayguide.png"
-						alt="picture of woman holding a rainbow colored jacket">
-				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Women's</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/stenen.jpg"
-						alt="picture of woman holding a rainbow colored jacket">
-				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Men's</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/bergklimmen.jpg"
-						alt="picture of woman holding a rainbow colored jacket">
-				</article>
-			</div>
+		<section class="slidersection slider">
+			<article class="slideritem1 slideritem">
+				<h2 class="sliderhead">Used Gear</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/jas.png" alt="picture of woman holding a rainbow colored jacket">
+			</article>
+			<article class="slideritem slideritemnext">
+				<h2 class="sliderhead">Holiday Guide</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/holidayguide.png" alt="Picture of man kissing a small child">
+			</article>
+			<article class="slideritem slideritemnext">
+				<h2 class="sliderhead">Women's</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/stenen.jpg" alt="Picture of yellow rocks with trees">
+			</article>
+			<article class="slideritem slideritemnext">
+				<h2 class="sliderhead">Men's</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/bergklimmen.jpg"
+					alt="Picture of huge mountains with climbers on them">
+			</article>
+			<article class="slideritem slideritemnext">
+				<h2 class="sliderhead">Kids' & Baby</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/kidsbaby.jpg" alt="Picture of small child playing by a waterstream">
+			</article>
+			<article class="slideritem slideritemnext">
+				<h2 class="sliderhead">Packs & Gear</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/packsgear.jpg" alt="Picture of hiker on hilltop">
+			</article>
+			<article class="slideritem slideritemnext">
+				<h2 class="sliderhead">Workwear</h2>
+				<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
+				<img class="sliderimg" src="images/workwear.jpg" alt="picture of woman dragging a boulder uphill">
+			</article>
 		</section>
-		<section>
+		<section class="mountainsection">
 			<div class="mountainimgcontainer">
 				<img class="mountainimg" src="images/mountains.jpg">
 			</div>
@@ -79,32 +133,53 @@
 				<a href="activism.html" class="mountainbutton bigbuttondefault">Read Our Letter</a>
 			</div>
 		</section>
-		<h3 class="storieshead">Latest Stories</h3>
-		<a href="activism.html"><p class="storieslink">View All</p></a>
-		<section class="slidersectie">
-			<div class="slider">
-				<article class="slideritem1 slideritem">
-					<h2 class="sliderhead">Used Gear</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/jas.png" alt="picture of woman holding a rainbow colored jacket">
+		<section class="lateststories">
+			<h3 class="storieshead">Latest Stories</h3>
+			<a href="activism.html">
+				<p class="storieslink">View All</p>
+			</a>
+			<div class="slider slider2">
+				<article class="slideritem1 slideritem slider2item">
+					<img class="sliderimg slider2img" src="images/mountains.jpg"
+						alt="Picture of beautiful snowy mountains">
+					<h2 class="sliderhead slider2head">Our Acknowledgement</h2>
+					<p class="slider2smalltext">patagonia</p>
+					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">2 min Read</a>
 				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Holiday Guide</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/holidayguide.png"
-						alt="picture of woman holding a rainbow colored jacket">
+				<article class="slideritem slideritemnext slider2item">
+					<img class="sliderimg slider2img" src="images/australiablacksummer.jpg"
+						alt="Black and white picture of burnt forests in australia">
+					<h2 class="sliderhead slider2head">One Year Since Australia's Black Summer</h2>
+					<p class="slider2smalltext">Sean Doherty</p>
+					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">3 min Read</a>
 				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Women's</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/stenen.jpg"
-						alt="picture of woman holding a rainbow colored jacket">
+				<article class="slideritem slideritemnext slider2item">
+					<img class="sliderimg slider2img" src="images/giftofstories.jpg"
+						alt="Picture of plastic bottles and such on the shore of a river between two mountains">
+					<h2 class="sliderhead slider2head">The Gift of Stories</h2>
+					<p class="slider2smalltext">Stephanie Vermillion</p>
+					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">6 min Read</a>
 				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Men's</h2>
-					<a href="activism.html" class="bigbuttondefault sliderbutton">Explore</a>
-					<img class="sliderimg" src="images/bergklimmen.jpg"
-						alt="picture of woman holding a rainbow colored jacket">
+				<article class="slideritem slideritemnext slider2item">
+					<img class="sliderimg slider2img" src="images/puelovalley.jpg"
+						alt="Picture of incredibly high mountains with snow peaks and valleys with trees">
+					<h2 class="sliderhead slider2head">Connecting the Cochamó and Puelo Valleys</h2>
+					<p class="slider2smalltext">Felipe Cancino</p>
+					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">6 min Read</a>
+				</article>
+				<article class="slideritem slideritemnext slider2item">
+					<img class="sliderimg slider2img" src="images/everyoneswildness.jpg"
+						alt="Picture of misty white mountains with lush forests in the foreground.">
+					<h2 class="sliderhead slider2head">Everyone's Wildness</h2>
+					<p class="slider2smalltext">J. Drew Lanham</p>
+					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">7 min Read</a>
+				</article>
+				<article class="slideritem slideritemnext slider2item">
+					<img class="sliderimg slider2img" src="images/soulcraft.jpg"
+						alt="Picture of misty white mountains with lush forests in the foreground.">
+					<h2 class="sliderhead slider2head">SoulCraft</h2>
+					<p class="slider2smalltext">Meaghen Brown</p>
+					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">4 min Read</a>
 				</article>
 			</div>
 		</section>
@@ -120,41 +195,74 @@
 			</div>
 		</section>
 		<section class="slidersectie sportensectie">
-			<div class="slider">
-				<article class="slideritem1 slideritem">
-					<h2 class="sliderhead">Surf</h2>
-					<button class="bigbuttondefault sliderbutton">Explore</button>
-					<img class="sliderimg" src="images/surfing.jpg"
+			<div class="slider slider3">
+				<article class="slideritem1 slider3item slideritem">
+					<h2 class="sliderhead slider3text">Surf</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/surfing.jpg"
 						alt="picture of woman holding a rainbow colored jacket">
 				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Climbing</h2>
-					<button class="bigbuttondefault sliderbutton">Explore</button>
-					<img class="sliderimg" src="images/climbing.jpg"
+				<article class="slideritem slider3item slideritemnext">
+					<h2 class="sliderhead slider3text">Climbing</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/climbing.jpg"
 						alt="picture of woman holding a rainbow colored jacket">
 				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Trailer Running</h2>
-					<button class="bigbuttondefault sliderbutton">Explore</button>
-					<img class="sliderimg" src="images/trailrouting.jpg"
+				<article class="slideritem slider3item slideritemnext">
+					<h2 class="sliderhead slider3text">Trail Running</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/trailrouting.jpg"
 						alt="picture of woman holding a rainbow colored jacket">
 				</article>
-				<article class="slideritem slideritemnext">
-					<h2 class="sliderhead">Mountain Biking</h2>
-					<button class="bigbuttondefault sliderbutton">Explore</button>
-					<img class="sliderimg" src="images/mountainbiking.jpg"
+				<article class="slideritem slider3item slideritemnext">
+					<h2 class="sliderhead slider3text">Mountain Biking</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/mountainbiking.jpg"
 						alt="picture of woman holding a rainbow colored jacket">
+				</article>
+				<article class="slideritem slider3item slideritemnext">
+					<h2 class="sliderhead slider3text">Fly Fishing</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/Flyfishing.jpg" alt="picture of flyfish">
+				</article>
+				<article class="slideritem slider3item slideritemnext">
+					<h2 class="sliderhead slider3text">Kitesurfing</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/kitesurfing.jpg"
+						alt="Picture of man on kiteboard surfing on sea">
+				</article>
+				<article class="slideritem slider3item slideritemnext">
+					<h2 class="sliderhead slider3text">Snow</h2>
+					<button class="bigbuttondefault sliderbutton slider3button">Explore</button>
+					<img class="sliderimg slider3img" src="images/snow.jpg"
+						alt="Picture of man on kiteboard surfing on sea">
 				</article>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<h3>Subscribe</h3>
-		<p>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
-		<form>
-			<input class="mailform" type="text" id="email" name="email" placeholder="Email Address">
-		</form>
-		<button class="resonancebutton bigbuttondefault">Sign Me Up</button>
+		<section class="footersection">
+			<section class="footersection1">
+				<h3>Subscribe</h3>
+				<p>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
+				<form>
+					<input class="mailform" type="text" id="email" name="email" placeholder="Email Address">
+				</form>
+				<button class="bigbuttondefault footersignup">Sign Me Up</button>
+			</section>
+			<section class="footersection2">
+				<h3 class="helptext">Need Help?</h3>
+				<button class="bigbuttondefault footerbutton">Help Center</button>
+				<button class="bigbuttondefault footerbutton">Order Status</button>
+				<button class="bigbuttondefault footerbutton">Returns & Exchanges</button>
+				<button class="bigbuttondefault footerbutton">Product Care & Repair</button>
+				<button class="bigbuttondefault footerbutton">Repair</button>
+			</section>
+			<section class="footersection3">
+				<h3 class="helptext">More Info</h3>
+				<p class="helptext">2020 Patagonia, Inc. All Rights Reserved. </p>
+			</section>
+		</section>
 
 	</footer>
 	<script src="scripts/script.js"></script>

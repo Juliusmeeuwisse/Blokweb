@@ -96,9 +96,20 @@ body {
   width: 90%;
   margin-left: 5%;
   margin-top: 7%;
-  margin-bottom: 12%;
+  margin-bottom: 10vh;
   text-align: center;
   text-decoration: none;
+}
+
+.bigTextBold {
+  font-family: 'lato', serif;
+  color: #212519;
+  z-index: 5;
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: 1000;
+  text-align: center;
+
 }
 
 .headtextdefault {
@@ -134,12 +145,6 @@ body {
 }
 
 /*Slider Default */
-.slidersectie {
-  height: 53vh;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
 
 .slider {
   display: flex;
@@ -149,20 +154,17 @@ body {
   overflow: scroll;
   overflow-y: hidden;
   align-items: center;
+  height: 60vh;
 }
 
 .slideritem {
   position: relative;
-  max-width: 80%;
+  max-width: 100%;
+  width: 18rem;
   flex-shrink: 0;
   scroll-snap-align: center;
-  margin-left: 0;
   display: flex;
   justify-content: center;
-}
-
-.slideritem1 {
-  margin-left: 20%;
 }
 
 .sliderhead {
@@ -173,40 +175,37 @@ body {
   color: white;
   margin-top: 8vh;
   top: calc(15% - 1em);
-  margin-right: 15%;
 }
 
 .sliderimg {
   display: block;
-  width: 85%;
+  width: 95%;
   height: auto;
   border-radius: 8px;
   max-width: 25em;
-  margin-right: 50px;
   scroll-snap-align: center;
+  width: 17rem;
 }
 
 .sliderbutton {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  width: 40vw;
-  max-width: 200px;
+  max-width: 150px;
   margin-top: 15vh;
   top: calc(15% - 1em);
-  margin-left: 16%;
+  margin-left: 0;
 }
 
-.slideritemnext {
-  margin-left: 0.5%;
+
+.slideritem1 {
+  margin-left: 10vw;
 }
 
 /* MOUNTAIN STUKJE*/
 
 .mountainimgcontainer {
   position: absolute;
-  top: 155%;
+  top: 160%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -245,8 +244,15 @@ body {
   font-weight: 1000;
   margin-top: 70vh;
 }
+
 /*Stories Slider */
- .storieshead {
+.lateststories {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.storieshead {
   font-family: "lato", serif;
   font-size: 1.3em;
   z-index: 2;
@@ -254,9 +260,15 @@ body {
   font-weight: 1000;
   width: 100%;
   text-align: center;
-  margin-top: 4em;
+  margin-top: 4vh;
 
 }
+
+.slider2 {
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
 .storieslink {
   font-family: "lato", serif;
   font-size: 0.9em;
@@ -268,6 +280,49 @@ body {
   margin-top: 0.8em;
   text-decoration: underline;
 
+}
+
+.slider2head {
+  font-family: 'Lusitana', serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  color: black;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+
+.slider2button {
+  margin-top: 40vh;
+  background-color: white;
+  margin-left: 9rem;
+  font-size: 0.8em;
+  padding: 12px;
+  width: 40%;
+
+}
+
+.slider2item {
+  justify-content: left;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  margin-right: 1.5rem;
+  width: 18rem;
+  border-radius: 10px;
+  min-height: 90%;
+}
+
+
+.slider2smalltext {
+  font-family: "lato", serif;
+  font-size: 0.8em;
+  position: absolute;
+  margin-top: 48vh;
+  margin-left: 3rem;
+}
+
+.slider2img {
+  width: 18rem;
+  border-radius: 8px 8px 0px 0px;
 }
 
 
@@ -294,7 +349,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 66%;
-  z-index: 100;
+  z-index: -1000;
 }
 
 .haunted {
@@ -314,11 +369,40 @@ body {
 }
 
 .hauntedbutton {
-  margin-bottom: 25vh;
+  margin-bottom: 40vh;
 }
-.sportensectie {
-  margin-top: 20vh;
-  margin-bottom: 4vh;
+
+/* Laatste slider*/
+
+.slider3button {
+  border: 5px solid white;
+  background-color: unset;
+  color: white;
+  padding: 6px 6px;
+  font-size: 0.8em;
+  margin-top: 17rem;
+  margin-left: 7rem;
+  position: absolute;
+  margin-right: 1rem;
+}
+
+.slider3text {
+  margin-top: 7rem;
+}
+
+.slider3 {
+  height: 70vh;
+  align-items: center;
+}
+
+.slider3img {
+  width: 18rem;
+  border-radius: 8px;
+}
+
+.slider3item {
+  margin-right: 1.5rem;
+  width: 18rem;
 }
 
 /* FOOTER*/
@@ -326,11 +410,17 @@ body {
 footer {
   background-color: black;
   height: 150vh;
-  padding-left: 5%;
-  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer :nth-child(1) {
+.footersection {
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+footer h3 {
   font-family: 'lato', serif;
   color: white;
   z-index: 5;
@@ -347,8 +437,23 @@ footer :nth-child(2) {
   margin-top: 5vh;
 }
 
-footer :nth-of-type(3) {
-  width: 100%;
+.footersignup {
+  width: 10rem;
+  padding: 12px;
+  margin: 0;
+  margin-top: 5vh;
+  font-size: 1.1em;
+}
+
+.footerbutton {
+  width: 13rem;
+  padding: 8px;
+  margin: 0;
+  margin-top: 5vh;
+  font-size: 1.1em;
+  border: 5px solid white;
+  background-color: unset;
+  color: white;
 }
 
 .mailform {
@@ -367,18 +472,13 @@ footer :nth-of-type(3) {
   font-size: 0.8em;
   font-weight: normal;
 }
-/*Activism*/
-.bigtextactivism {
-  font-family: 'lato', serif;
-  color: black;
-  z-index: 5;
-  font-size: 2.5em;
-  line-height: 1.2;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 18vh;
 
+.helptext {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
+
+/*Activism*/
 .smalltextactivism {
   font-family: 'lato', serif;
   color: black;
@@ -391,16 +491,19 @@ footer :nth-of-type(3) {
   font-weight: normal;
 
 }
+
 .activismhead {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
+
 /* Green Future section */
 .greenfutureimgcontainer {
   position: absolute;
-  top: 190%;
+  top: 200%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -421,10 +524,108 @@ footer :nth-of-type(3) {
   opacity: 66%;
   z-index: 100;
 }
+
 .activismslider1 {
   margin-top: 24vh;
 
 }
+
+.greenfuturesection {
+  height: 100vh;
+}
+
+/* Overlay van W3Schools */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.overlaysection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 10rem;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  transition: 0.3s;
+}
+
+.overlay p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 1rem;
+
+}
+
+.overlayimg {
+  border-radius: 8px;
+  width: 13rem;
+  margin-bottom: 1.4rem;
+}
+
+.overlayimghead {
+  position: absolute;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.overlayimgsection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 /* COMPUTER */
 @media only screen and (min-width: 768px) {
   .navlogo {
@@ -441,6 +642,8 @@ footer :nth-of-type(3) {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .resonancebutton {
@@ -448,8 +651,9 @@ footer :nth-of-type(3) {
     margin-left: 0;
     padding: 18px;
     white-space: nowrap;
-    margin-top: 1%;
+    margin-top: 2%;
     width: 220px;
+    margin-bottom: 15%;
   }
 
   .resonancehead {
@@ -458,10 +662,6 @@ footer :nth-of-type(3) {
     text-align: center;
     font-size: 64px;
     margin-top: 250px;
-  }
-
-  .slideritem1 {
-    margin-left: 4%;
   }
 
   .resonancetext {
@@ -477,6 +677,7 @@ footer :nth-of-type(3) {
     width: 100%;
     font-size: 3.6rem;
   }
+
   .mountainbutton {
     align-self: center;
     margin-left: 0;
@@ -484,5 +685,199 @@ footer :nth-of-type(3) {
     white-space: nowrap;
     margin-top: 1%;
     width: 220px;
+    margin-bottom: 15%;
+  }
+
+  .slideritem {
+    width: 24vw;
+  }
+
+  .slideritem1 {
+    margin-left: 3%;
+  }
+
+  .sliderimg {
+    width: 23vw;
+    max-width: 31rem;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+
+  .sliderhead {
+    font-size: 2.5rem;
+    margin-top: 12vh;
+  }
+
+  .sliderbutton {
+    margin-top: 20vh;
+  }
+
+  .mountainimgcontainer {
+    margin-top: 10vh;
+  }
+
+  .mountain {
+    height: 100vh;
+    margin-bottom: 9em;
+  }
+
+  .hauntedimgcontainer {
+    margin-top: 30vh;
+
+  }
+
+  .hauntedhead {
+    font-size: 3rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 30vh;
+  }
+
+  .hauntedtext {
+    width: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-top: 5vh;
+  }
+
+  .haunted {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .hauntedbutton {
+    width: 30%;
+    margin: 0;
+    white-space: nowrap;
+    margin-top: 2%;
+    width: 240px;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+
+  .storieshead {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 4%;
+    width: 16.5rem;
+    margin-top: 0;
+  }
+
+  .storieslink {
+    font-size: 1em;
+    font-weight: 900;
+  }
+
+  .slider2head {
+    margin-top: 2rem;
+    font-size: 1.5em;
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  .slider2button {
+    margin-top: 50vh;
+    background-color: white;
+    margin-left: 18rem;
+    font-size: 0.85em;
+    padding: 12px;
+    width: 30%;
+    position: absolute;
+    margin-right: 3rem;
+    top: 0;
+
+  }
+
+  .slider2item {
+    justify-content: left;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    margin-right: 1.5rem;
+    width: 27rem;
+    border-radius: 10px;
+    min-height: 80%;
+  }
+
+  .test {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: flex-end;
+  }
+
+  .slider2img {
+    width: 26.9rem;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .slider2smalltext {
+    margin-top: 51vh;
+    margin-left: 3rem;
+  }
+
+  .sportensectie {
+    margin-top: 20vh;
+    height: 100vh;
+    justify-content: flex-end;
+  }
+
+  .slider3img {
+    border-radius: 8px;
+    margin: 0;
+    width: 28rem;
+  }
+
+  .slider3item {
+    justify-content: left;
+    margin-right: 1.5rem;
+    width: 28rem;
+    border-radius: 10px;
+    min-height: 80%;
+
+  }
+
+  .slider3 {
+    height: 85vh;
+  }
+
+  .slider3text {
+    margin-top: 10rem;
+    position: absolute;
+    font-size: 1.8em;
+    margin-left: 2rem;
+  }
+
+  .slider3button {
+    border: 5px solid white;
+    background-color: unset;
+    color: white;
+    padding: 6px 6px;
+    width: 7rem;
+    font-size: 0.8em;
+    margin-top: 50vh;
+    position: absolute;
+    margin-left: 18rem;
+  }
+
+  .footersection {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 80%;
+    justify-content: center;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .footer {
+    padding: 0;
+    box-sizing: unset;
+    display: flex;
   }
 }
