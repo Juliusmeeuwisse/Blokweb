@@ -14,23 +14,32 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik vondt het gebruik van nth of type en first of type erg lastig, en heb nog steeds teveel classes gebruikt. Ik vond uiteindelijk de sliders maken erg leuk en het verbaaste me hoe het in zijn werking ging. Ook vond ik het nog steeds lastig om te kiezen welk soort element ik moet kiezen zodat de website semantisch correct blijft. Ik ben uiteindelijk best tevreden met mijn ontwerp maar denk dat de code veel beter kan.
 
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
 
-
+<img src="images/hamburgermenu.png" width="1920px" alt="mainpc">
+<img src="images/slider1.png" width="1920px" alt="mainpc">
+<img src="images/slider2.png" width="1920px" alt="mainpc">
+<img src="images/pagina2.png" width="1920px" alt="mainpc">
+<img src="images/pagina2foto2.png" width="1920px" alt="mainpc">
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Veder gegaan aan de sliders en klein beetje aan pagina 2 gewerkt.
+Ik heb deze slider gemaakt wat erg lastig was voor mijn gevoel maar uiteindelijk toch prima gelukt is.
+Ook heb ik deze week een goed begin gemaakt aan de footer.
+<img src="images/SliderWeek6.png" width="1920px" alt="mainpc">
+<img src="images/defooter.png" width="1920px" alt="mainpc">
 
 
 
 ## Voortgang 2 (week 5)
 
 Ik heb de sliders helemaal anders gemaakt zodat ze nu echt goed werken en heb veel content toegevoegd.
+<img src="images/slidernieuw.png" width="1920px" alt="mainpc">
 
 
 **Screenshot(s):**

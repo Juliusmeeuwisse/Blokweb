@@ -1,9 +1,20 @@
-var Nav = document.getElementById("hamburgermenu")
+/*var nav = document.querySelector("#hamburgermenu");
+var navicon = document.querySelector("#burger");
+
+navicon.addEventListener("click",openNav);
 
 function openNav() {
-  hamburgermenu.style.width = "100%";
+  nav.classList.toggle = "showNav";
+  nav.style.width = "100%";
+}
+*/
+var nav = document.querySelector("#hamburgermenu")
+
+function openNav() {
+  nav.style.width = "100%";
 }
 
 function closeNav() {
-  hamburgermenu.style.width = "0%";
+  nav.style.width = "0%";
 }
+/* navicon.addEventListener('click',openNav()) */

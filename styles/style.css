@@ -12,12 +12,19 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+/*
+#hamburgermenu {
+  display: none;
+}
+
+.showNav {
+  display: block;
+}
+*/
 
 .blackbar {
   position: absolute;
   top: 0px;
-  color: black;
-  border: black;
   height: 48px;
   width: 100%;
   z-index: 5;
@@ -86,7 +93,7 @@ body {
 
 .bigbuttondefault {
   font-family: 'Lato', sans-serif;
-  font-weight: 1000;
+  font-weight: 900;
   border: none;
   color: black;
   background-color: white;
@@ -107,7 +114,7 @@ body {
   z-index: 5;
   font-size: 2.5em;
   line-height: 1.2;
-  font-weight: 1000;
+  font-weight: 900;
   text-align: center;
 
 }
@@ -170,7 +177,7 @@ body {
 .sliderhead {
   font-family: "lato", serif;
   font-size: 1.5em;
-  font-weight: 1000;
+  font-weight: 900;
   position: absolute;
   color: white;
   margin-top: 8vh;
@@ -241,7 +248,7 @@ body {
 .mountainhead {
   font-family: 'Lato', serif;
   font-size: 28px;
-  font-weight: 1000;
+  font-weight: 900;
   margin-top: 70vh;
 }
 
@@ -257,7 +264,7 @@ body {
   font-size: 1.3em;
   z-index: 2;
   color: black;
-  font-weight: 1000;
+  font-weight: 900;
   width: 100%;
   text-align: center;
   margin-top: 4vh;
@@ -274,7 +281,7 @@ body {
   font-size: 0.9em;
   z-index: 2;
   color: black;
-  font-weight: 1000;
+  font-weight: 900;
   width: 100%;
   text-align: center;
   margin-top: 0.8em;
@@ -409,23 +416,36 @@ body {
 
 footer {
   background-color: black;
-  height: 150vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  
 }
 
 .footersection {
   margin-top: 5vh;
   margin-left: 5vw;
 }
-
+.footersection3 {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.S3List1 {
+  text-decoration: none;
+}
+.smallfootertext {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+}
 footer h3 {
   font-family: 'lato', serif;
   color: white;
   z-index: 5;
   font-size: 1.25em;
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 footer :nth-child(2) {
@@ -474,11 +494,11 @@ footer :nth-child(2) {
 }
 
 .helptext {
-  margin-top: 0rem;
+  margin-top: 2rem;
   margin-bottom: 0rem;
 }
 
-/*Activism*/
+/*Activism Page*/
 .smalltextactivism {
   font-family: 'lato', serif;
   color: black;
@@ -525,13 +545,68 @@ footer :nth-child(2) {
   z-index: 100;
 }
 
-.activismslider1 {
-  margin-top: 24vh;
-
-}
-
 .greenfuturesection {
   height: 100vh;
+}
+/* First Slider of 2nd page */
+.actslider1 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.videocontainer2 {
+  position: absolute;
+  top: 370vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: black;
+}
+/* Public Trust Stuk */
+.publictrust {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.publictrustHead {
+  font-size: 4.5em;
+  margin-top: 10vh;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  font-family: 'Lusitana', serif;
+  color: white;
+  font-weight: 200;
+}
+.publictrustText {
+  margin-left: 0;
+  width: 100%;
+  margin-right: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 2vh;
+}
+.publicTrustButton {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 19px 10%;
+  font-size: 16px;
+  border-radius: 35px;
+  margin-top: 5vh;
+  text-align: center;
+  text-decoration: none;
+  max-width: 30rem;
+  min-width: 11rem;
+}
+.activismfooter {
+  margin-top: 50vh;
 }
 
 /* Overlay van W3Schools */
@@ -689,7 +764,7 @@ footer :nth-child(2) {
   }
 
   .slideritem {
-    width: 24vw;
+    width: 30rem;
   }
 
   .slideritem1 {
@@ -697,12 +772,12 @@ footer :nth-child(2) {
   }
 
   .sliderimg {
-    width: 23vw;
+    width: 28rem;
     max-width: 31rem;
   }
 
   .slider {
-    height: 60vh;
+    height: 70vh;
   }
 
   .sliderhead {
@@ -720,7 +795,6 @@ footer :nth-child(2) {
 
   .mountain {
     height: 100vh;
-    margin-bottom: 9em;
   }
 
   .hauntedimgcontainer {
@@ -760,32 +834,41 @@ footer :nth-child(2) {
     padding: 20px;
     font-size: 1.2em;
   }
-
+.lateststories {
+  height: 100vh;
+}
   .storieshead {
     font-size: 2.5rem;
     text-align: left;
     margin-left: 4%;
     width: 16.5rem;
-    margin-top: 0;
+    margin-top: 5vh;
+  }
+  .storiesheads {
+    display: flex;
+    flex-direction: row;
   }
 
   .storieslink {
     font-size: 1em;
     font-weight: 900;
+    margin-top: 7vh;
   }
+
   .slider2 {
-    height: 35rem;
+    height: 100vh;
   }
 
   .slider2head {
-    margin-top: 2rem;
+    margin-top: 2vh;
     font-size: 1.5em;
     position: relative;
     margin-left: 2rem;
+    top: 0;
   }
 
   .slider2button {
-    margin-top: 50vh;
+    margin-top: 56vh;
     background-color: white;
     margin-left: 18rem;
     font-size: 0.85em;
@@ -804,7 +887,8 @@ footer :nth-child(2) {
     margin-right: 1.5rem;
     width: 27rem;
     border-radius: 10px;
-    min-height: 100%;
+    min-height: 60vh;
+    height: 65vh;
   }
 
   .test {
@@ -820,13 +904,12 @@ footer :nth-child(2) {
   }
 
   .slider2smalltext {
-    margin-top: 51vh;
+    margin-top: 57vh;
     margin-left: 3rem;
   }
 
   .sportensectie {
-    margin-top: 20vh;
-    height: 100vh;
+    height: 80vh;
     justify-content: flex-end;
   }
 
@@ -834,6 +917,7 @@ footer :nth-child(2) {
     border-radius: 8px;
     margin: 0;
     width: 28rem;
+    
   }
 
   .slider3item {
@@ -841,12 +925,11 @@ footer :nth-child(2) {
     margin-right: 1.5rem;
     width: 28rem;
     border-radius: 10px;
-    min-height: 80%;
 
   }
 
   .slider3 {
-    height: 85vh;
+    height: 80vh;
   }
 
   .slider3text {
@@ -863,7 +946,7 @@ footer :nth-child(2) {
     padding: 6px 6px;
     width: 7rem;
     font-size: 0.8em;
-    margin-top: 50vh;
+    margin-top: 26rem;
     position: absolute;
     margin-left: 18rem;
   }
@@ -877,10 +960,35 @@ footer :nth-child(2) {
     padding: 0;
     margin-left: 0;
   }
-
+  .footersection2 {
+    width: 40%;
+  }
   .footer {
     padding: 0;
     box-sizing: unset;
     display: flex;
+    height: 50vh;
+  } /* 2ND PAGE */
+  .bigTextBold {
+    font-size: 4em;
+  }
+  .activismfooter {
+    margin-top: 36vh;
+  }
+  /*Public Trust */
+  .publictrustHead {
+    margin-top: 30vh;
+  }
+  .greenFuturediv {
+    text-align: center;
+  }
+  .greensmalltext {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 2vh;
+  }
+  .smalltextactivism {
+    font-size: 1.2em;
   }
 }
