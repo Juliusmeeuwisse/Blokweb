@@ -967,11 +967,9 @@ footer :nth-child(2) {
   .footersection2 {
     width: 40%;
   }
-  .footer {
-    padding: 0;
-    box-sizing: unset;
-    display: flex;
-    height: 50vh;
+  footer {
+    height: 70vh;
+    
   } /* 2ND PAGE */
   .bigTextBold {
     font-size: 4em;
