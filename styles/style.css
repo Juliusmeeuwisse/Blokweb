@@ -160,7 +160,7 @@ body {
   scroll-snap-type: x mandatory;
   overflow: scroll;
   overflow-y: hidden;
-  align-items: center;
+  align-items: flex-start;
   height: 60vh;
 }
 
