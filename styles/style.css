@@ -627,24 +627,27 @@ footer :nth-child(2) {
 
 .overlay-content {
   position: relative;
-  top: 25%;
-  width: 100%;
+  top: 5vh;
   margin-top: 30px;
   font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 10vh;
 }
 
 .overlaysection {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-right: 10rem;
+  text-align: center;
+  margin-bottom: 5vh;
 }
 
 .overlay a {
   text-decoration: none;
-  font-size: 36px;
+  font-size: 20px;
   color: #ffffff;
   display: block;
   font-weight: 700;
@@ -691,18 +694,6 @@ footer :nth-child(2) {
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }
 
 /* COMPUTER */
@@ -986,5 +977,13 @@ footer :nth-child(2) {
   }
   .smalltextactivism {
     font-size: 1.2em;
+  }
+  .overlay-content {
+    flex-direction: row;
+    top: 25%;
+    margin-top: 0;
+  }
+  .overlaysection {
+    margin-right: 10rem;
   }
 }
