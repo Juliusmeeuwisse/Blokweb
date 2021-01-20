@@ -103,6 +103,7 @@ body {
   width: 90%;
   margin-left: 5%;
   margin-top: 7%;
+  margin-bottom: 4rem;
   text-align: center;
   text-decoration: none;
 }
@@ -136,7 +137,7 @@ body {
   line-height: 26px;
   margin-left: 11%;
   width: 70%;
-  margin-top: 3%;
+  margin-top: 2vh;
 }
 
 /* RESONANCE STUKJE*/
@@ -759,6 +760,7 @@ footer :nth-child(2) {
     white-space: nowrap;
     margin-top: 1%;
     width: 220px;
+    margin-bottom: 40vh;
   }
 
   .slideritem {
