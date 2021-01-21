@@ -6,15 +6,45 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.patagonia.com/
+2. https://codepen.io/shooft/pen/zYqJLvZ
+3. https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 
+## Herkansing (week 9)
+De feedback bij het eindgesprek:
+- geen inline JS
+- valideer de website daadwerkelijk op je mobiel
+- menu werkt niet op detail page
+- update je github
+- minder classes, gebruik pseudo!
+- descriptive comments
+
+Ik heb al deze criteria gevolgd en uiteindelijk heb ik al deze criteria mooi voldaan. 
+Ik ging aan de slag en fixde de meeste dingen erg snel, het hamburger menu werkt nu helemaal goed zonder inline JS en werkt op mobiel (wat het eerst niet deed). De rest van de website heb ik zelf bekeken op mijn mobiel en werkt ook echt goed, ik kwam er al snel achter dat het gebruik van percentages op secties het niet goed deed op mobiel dus heb deze view heights gegeven wat perfect werkt. Ook heb ik zo veel mogelijk classes verwijderd en hiervoor in de plaats pseudo classes gebruikt.
+
+Uiteindelijk ben ik erg tevreden over het resultaat, ik heb vooral meer over flexbox geleerd en over semantisch correct code schrijf door middel van sections, articles etc.
+
+**Screenshot(s) herkansing:**
+<img src="images/hamburgermenu.png" width="1920px" alt="mainpc">
+<img src="images/slider1.png" width="1920px" alt="mainpc">
+<img src="images/slider2.png" width="1920px" alt="mainpc">
+<img src="images/pagina2.png" width="1920px" alt="mainpc">
+<img src="images/pagina2foto2.png" width="1920px" alt="mainpc">
+<img src="images/mobilehamburger.png" width="375px" alt="mainmobile">
+<img src="images/mobilehamburger2.png" width="375px" alt="mainmobile">
 
 ## Eindgesprek (week 7/8)
 
 Ik vondt het gebruik van nth of type en first of type erg lastig, en heb nog steeds teveel classes gebruikt. Ik vond uiteindelijk de sliders maken erg leuk en het verbaaste me hoe het in zijn werking ging. Ook vond ik het nog steeds lastig om te kiezen welk soort element ik moet kiezen zodat de website semantisch correct blijft. Ik ben uiteindelijk best tevreden met mijn ontwerp maar denk dat de code veel beter kan.
+
+De feedback bij het eindgesprek:
+- geen inline JS
+- valideer de website daadwerkelijk op je mobiel
+- menu werkt niet op detail page
+- update je github
+- minder classes, gebruik pseudo!
+- descriptive comments
 
 **Screenshot(s):**
 

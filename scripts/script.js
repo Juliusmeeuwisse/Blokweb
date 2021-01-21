@@ -1,13 +1,3 @@
-/*var nav = document.querySelector("#hamburgermenu");
-var navicon = document.querySelector("#burger");
-
-navicon.addEventListener("click",openNav);
-
-function openNav() {
-  nav.classList.toggle = "showNav";
-  nav.style.width = "100%";
-}
-*/
 var openTag = document.querySelector('#hamburger');
 var nav = document.querySelector("#hamburgermenu");
 var closeTag = document.querySelector(".closebtn");

@@ -20,6 +20,7 @@
 
 <body>
 	<header>
+		<!-- Blackbar at top of screen that's positioned absolutely-->
 		<div class="blackbar"></div>
 		<h4 class="shiptext">Free Shipping On Orders Over $49</h4>
 		<div class="videocontainer">
@@ -27,14 +28,15 @@
 				<source src="videos/activism.mp4" type="video/mp4">
 			</video>
 		</div>
+		<!-- Navigation bar flexed, space between. magnifying glass and hamburger paired together -->
 		<nav class="navbar">
-			<a class="shoppingbag"><img alt="Shopping bag icon" class="navitem" src="images/shopping.svg"></a>
-			<a href="index.html" class="navlistlogo"><img alt="Logo of Patagonia" class="navitem navlogo"
-					src="images/patlogo.png"></a>
-			<div class="glasslogo"><a><img alt="Logo of magnifying glass" class="navitem" src="images/glass.svg"></a>
+			<a><img alt="Shopping bag icon" src="images/shopping.svg"></a>
+			<a href="index.html"><img alt="Logo of Patagonia" class=" navlogo" src="images/patlogo.png"></a>
+			<div><a><img alt="Logo of magnifying glass" src="images/glass.svg"></a>
 				<a href="#" id="hamburger"><img alt="Icon that consists of three lines which forms a menu"
-						class="navitem" src="images/burger.svg"></a></div>
+						src="images/burger.svg"></a></div>
 		</nav>
+		<!-- Hamburger menu overlay positioned fixed-->
 		<div id="hamburgermenu" class="overlay">
 			<a href="#" class="closebtn">&times;</a>
 			<div class="overlay-content">
@@ -78,15 +80,16 @@
 				</section>
 			</div>
 		</div>
+		<!--first real section with content-->
 		<section class="resonance">
 			<h1 class="resonancehead headtextdefault">We're in Business to save our home planet</h1>
 			<p class="resonancetext smalltextdefault">We aim to use the resources we have—our voice, our business and
 				our community—to do something about our climate crisis.</p>
 			<button class=" resonancebutton bigbuttondefault">Join Us</button>
 		</section>
-		<!-- Hamburger menu overlay positioned fixed-->
 	</header>
-	<main>
+	<main class="activismmain">
+		<!-- Second content section-->
 		<section class="activismhead">
 			<h1 class="bigtextactivism bigTextBold">We're Part of a Movement for Change</h1>
 			<p class="smalltextactivism">From supporting youth fighting against oil drilling to suing the president, we
@@ -96,6 +99,7 @@
 
 
 		</section>
+		<!-- Third content section-->
 		<section class="greenfuturesection">
 			<div class="greenfutureimgcontainer">
 				<img class="greenimg" alt="Picture of green grain fields" src="images/greenfuture.jpg">
@@ -107,29 +111,31 @@
 				<button class="mountainbutton bigbuttondefault">Read</button>
 			</div>
 		</section>
+		<!-- The only slider on this page, structured like slider2 from page1-->
 		<section class="actslider1">
 			<div class="slider">
-				<article class="slideritem1 slideritem slider2item">
-					<img alt="Drawn picture of purple hills" class="slider2img" src="images/actSliderOne1.png">
-					<h2 class="sliderhead slider2head">The Resonance of Stone</h2>
+				<article class="slideritem slider2item">
+					<img alt="Drawn picture of purple hills" src="images/actSliderOne1.png">
+					<h2>The Resonance of Stone</h2>
 					<p class="slider2smalltext">Terry</p>
 					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">1 min Read</a>
 				</article>
 				<article class="slideritem slideritemnext slider2item">
-					<img alt="Woman standing with a smile" class="slider2img" src="images/actSliderOne2.png">
-					<h2 class="sliderhead slider2head">Public Enemies</h2>
+					<img alt="Woman standing with a smile" src="images/actSliderOne2.png">
+					<h2>Public Enemies</h2>
 					<p class="slider2smalltext">Mădălina</p>
 					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">9 min Read</a>
 				</article>
 				<article class="slideritem slideritemnext slider2item">
-					<img class="slider2img" src="images/actSliderOne3.png" alt="Picture of snowy forest with a skier">
-					<h2 class="sliderhead slider2head">Wil You Vote for Winter?</h2>
+					<img src="images/actSliderOne3.png" alt="Picture of snowy forest with a skier">
+					<h2>Wil You Vote for Winter?</h2>
 					<p class="slider2smalltext">Maia</p>
 					<a href="activism.html" class="bigbuttondefault sliderbutton slider2button">6 min Read</a>
 				</article>
 			</div>
 		</section>
 		<section>
+			<!-- Third content section with video background-->
 			<div class="videocontainer2">
 				<video autoplay muted loop>
 					<source src="videos/actvideo2.mp4" type="video/mp4">
@@ -148,6 +154,7 @@
 			</div>
 		</section>
 	</main>
+	<!--footer, section with background color property-->
 	<footer class="activismfooter">
 		<section class="footersection">
 			<section class="footersection1">
